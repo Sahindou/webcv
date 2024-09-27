@@ -1,0 +1,291 @@
+:root {
+    --primary-color: #AEDAE0;
+    --secondary-color: #F7F7E4;
+    --tertiary-color: #FAF3DB;
+    --bg-color: linear-gradient(to right top, #faf3db, #fff1e6, #fff2f4, #fff7fe, #fbfbff);/*#FBFBFE;*/
+    --font-color: #050316;
+    --bg-contact: #F2F1FA;
+    --grandiant-color: linear-gradient(to bottom, #fbfbfe, #fff8fd, #fff5f5, #fff5ea, #f7f7e4);
+    --section-color:  linear-gradient(to right bottom, #faf3db, #fff1e2, #fff1ed, #fff4f8, #fff7fe, #fff7fe, #fff7fe, #fff7fe, #fff4f8, #fff1ed, #fff1e2, #faf3db);
+}
+
+body {
+    background-image: var(--bg-color);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    color: var(--font-color);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+h1,
+h2,h3{
+    font-family: 'Open Sans', saans-serif;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+h1{
+    font-size: 32px;
+}
+h2{
+    font-size: 26px;
+    text-align: center;
+}
+h3{
+    font-size: 26px;
+    
+}
+a {
+    text-decoration: none;
+    color: var(--font-color);
+    cursor: pointer;
+}
+
+button {
+    background-color: var(--tertiary-color);
+    border: 1px solid #D4D2E3;
+    border-radius: 36.55px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    color: var(--font-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; 
+}
+
+button:hover {
+    background-color: var(--primary-color);
+}
+
+input{
+    border-radius: 50px;
+    width: 156px;
+    height: 36px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-grid {
+    display: grid;
+}
+
+.d-block{
+    display: block;
+}
+/* Ajustements de style pour le menu de navigation */
+.d-none {
+    display: none !important;
+}
+
+/*-------------------------------------Header--------------------------*/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom, #f7f7e4, #fff5ea, #fff5f5, #fff8fd, #fbfbfe);
+    height: 10vh;
+}
+
+header{
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background: transparent;
+    height: 85vh;
+    background-image: var(--section-color);
+}
+.logo {
+    margin-right: 5px;
+    height: 80px; /* Ajuste la hauteur selon la taille du logo */
+    width: 80px; /* Ajuste la largeur si nécessaire */
+   
+}
+
+.logo img {
+   width: 100%; /* Ajuste la taille de l'image pour correspondre au conteneur */
+    height: 100%; /* Conserve le ratio d'aspect */
+}
+
+.nav-lien a {
+    margin-right: 10px;
+}
+
+/* From Uiverse.io by Cevorob */
+.burger {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+}
+
+.burger input {
+    display: none;
+}
+
+.burger span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: black;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-100%);
+}
+
+.burger input:checked~span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    left: 5px;
+}
+
+.burger input:checked~span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+}
+
+.burger input:checked~span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 28px;
+    left: 5px;
+}
+
+.zone-info-header{
+    justify-content: center;
+    align-content: center;
+    padding-left: 15%;
+}
+
+.zone-img-header{
+    justify-content: center;
+    align-content: center;
+    padding-left: 15%;
+    width: 80%;
+}
+
+.hero-info{
+    width: 80%;
+}
+
+.hero-img {
+    position: relative; /* Positionnement pour gérer les pseudo-éléments */
+    display: flex; /* Centrer l'image dans le conteneur */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Cache tout dépassement de l'image */
+    border-radius: 20px; /* Arrondir les coins */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Ajout d'une ombre pour profondeur */
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out; /* Transition pour les animations */
+}
+
+.hero-img img {
+    max-width: 100%; /* Assure que l'image ne dépasse pas du conteneur */
+    height: auto; /* Conserve le ratio de l'image */
+    border-radius: 15px; /* Ajout de coins arrondis à l'image */
+    transition: transform 0.4s ease-in-out; /* Transition sur transformation */
+}
+
+.hero-img:hover {
+    transform: scale(1.05); /* Légère augmentation de taille du conteneur */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée */
+}
+
+.hero-img:hover img {
+    transform: scale(1.1); /* Augmente l'image au survol */
+}
+
+/* Effet d'éclairage en pseudo-élément */
+.hero-img::before {
+    content: ''; /* Ajoute un contenu vide */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3)); /* Dégradé transparent */
+    opacity: 0; /* Initialement invisible */
+    border-radius: 15px; /* Même arrondi que le conteneur */
+    transition: opacity 0.4s ease-in-out; /* Transition de l'opacité */
+}
+
+.hero-img:hover::before {
+    opacity: 1; /* Rendre visible le pseudo-élément au survol */
+}
+
+.btn-info{
+    margin-top: 5%;
+}
+/* Media query pour la version mobile */
+@media (max-width: 768px) {
+    .nav-lien {
+        /* Couleur de fond semi-transparente */
+        background: rgba(255, 255, 255, 0.3); 
+
+        /* Application de l'effet flou */
+        backdrop-filter: blur(10px); /* Augmentez la valeur pour plus de flou */
+
+        /* Autres styles */
+        border: 1px solid rgba(255, 255, 255, 0.18); /* Bordure subtile */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre pour donner de la profondeur */
+        flex-direction: column;
+        margin-top: 35%;
+        gap: 20px;
+        padding: 20px;
+        border-radius: 15px; /* Coins arrondis */
+        position: absolute; /* Positionnement absolu pour le mettre au-dessus */
+        z-index: 10; /* Met le menu au premier plan */
+        width: 90%; /* Largeur du menu */
+        right: 5%; /* Aligner le menu sur le côté */
+        text-align: center;
+    }
+
+    header{
+        grid-template-rows: auto 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    
+}
+
+/*--------------------------------------Footer--------------------------*/
+footer{
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.2); /* Couleur de fond semi-transparente */
+    backdrop-filter: blur(10px); /* Application de l'effet de flou */
+    -webkit-backdrop-filter: blur(10px); /* Compatibilité pour Safari */
+    padding: 20px 40px; /* Espacement autour des éléments */
+    color: var(--font-color); /* Couleur du texte */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre pour donner de la profondeur */
+    border-top-left-radius: 30px; /* Coins arrondis en haut */
+    border-top-right-radius: 30px; /* Coins arrondis en haut */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Bordure subtile */
+    position: relative; /* Position relative pour gérer le z-index */
+    z-index: 1; /* Priorité visuelle */
+}

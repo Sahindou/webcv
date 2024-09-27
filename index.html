@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Abdallah Sahindou">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="rss/css/style.css">
+    <link rel="stylesheet" href="rss/css/main.css">
+</head>
+
+<body>
+    <nav class="d-flex">
+        <div class="logo">
+            <h1><a href="index.html">AS</a></h1>
+        </div>
+        <div class="nav-lien d-flex"> <!-- Ajout de la classe d-none -->
+            <a href="#about">À propos</a>
+            <a href="#competence">Compétence</a>
+            <a href="#realisation">Réalisation</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-burger d-none">
+            <label class="burger" for="burger">
+                <input type="checkbox" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    </nav>
+
+    <header class="d-grid">
+        <div class="zone-info-header ">
+            <div class="hero-info">
+                <h1>Salut,<br> Je suis Abdallah<br> développeur Full - Stack</h1>
+                <p>N’hesiter pas à consulter mon CV ou le télécharger on sait jamais !!!!</p>
+                <div class="btn-info">
+                    <button><a href="rss/img/CV.pdf" target="_blank"> Visualiser le CV<img src="rss/icon/btn-icon.svg"
+                                class="btn-icon " alt="icon de button"></a></button>
+                    <button> <a href="rss/img/CV.pdf" download="">Télécharger le CV<img src="rss/icon/btn-icon.svg"
+                                class="btn-icon " alt="icon de button"></a></button>
+                </div>
+            </div>
+        </div>
+        <div class="zone-img-header">
+            <div class="hero-img">
+                <img src="rss/img/technology-1283624_640.jpg" alt="Image dans le heros">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-about d-grid" id="about">
+            <h2 class="d-none header-about">A propos</h2>
+            <div class="zone-img-about d-flex">
+                <div class="about-img">
+                    <img src="rss/img/technology-1283624_640.jpg" alt="Photo de profil">
+                </div>
+            </div>
+            <div class="zone-info-about">
+                <div class="about-info">
+                    <p>Je m'appelle Abdallah, je suis en apprentissage pour devenir développeur full stack. Passionné
+                        par la programmation et toujours curieux de découvrir de nouvelles technologies, j'aime relever
+                        des défis et travailler de manière autonome. N'hésitez pas à consulter mes profils sociaux via
+                        les liens ci-dessous !</p>
+                    <div class="about-icon">
+                        <a href="https://www.facebook.com" target="_blank"><img src="rss/icon/Facebook.svg"
+                                alt="icon fb"></a>
+                        <a href="https://github.com" target="_blank"><img src="rss/icon/Github.svg"
+                                alt="icon Github"></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><img src="rss/icon/LinkedIn.svg"
+                                alt="icon LinkedIn"></a>
+                        <a href="https://web.whatsapp.com" target="_blank"><img src="rss/icon/Whatsapp.svg"
+                                alt="icon Whatsapp" id="icon-wa"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-competence" id="competence">
+            <h2>Compétences acquises</h2>
+            <div class="container-competence d-flex">
+                <div class="mobile-comp-left d-flex">
+                    <div class="container-langage">
+                        <div class="label-competence">
+                            <p>html</p>
+                        </div>
+                        <div><img src="rss/icon/html.svg" alt="logo html"></div>
+                    </div>
+                    <div class="container-langage">
+                        <div class="label-competence">
+                            <p>css</p>
+                        </div>
+                        <div><img src="rss/icon/css.svg" alt="logo css"></div>
+                    </div>
+                    <div class="container-langage">
+                        <div class="label-competence">
+                            <p>js</p>
+                        </div>
+                        <div><img src="rss/icon/js.svg" alt="logo js"></div>
+                    </div>
+                </div>
+                <div class="mobile-comp-right d-flex">
+                    <div class="container-langage">
+                        <div class="label-competence">
+                            <p>php</p>
+                        </div>
+                        <div><img src="rss/icon/php.svg" alt="logo php"></div>
+                    </div>
+                    <div class="container-langage">
+                        <div class="label-competence">
+                            <p>react</p>
+                        </div>
+                        <div><img src="rss/icon/react.svg" alt="logo react"></div>
+                    </div>
+                    <div class="container-langage">
+                        <div class="label-competence">
+                            <p>nodejs</p>
+                        </div>
+                        <div><img src="rss/icon/nodejs.svg" alt="logo nodejs"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section-realisation d-flex" id="realisation">
+            <h2>Réalisation</h2>
+            <div class="zone-info-realisation">
+                <p>Parmi les réalisations présentées ci-dessus, certaines ne sont pas accessibles en ligne, mais leur
+                    code source est disponible sur mon GitHub. N'hésitez pas à y jeter un coup d'œil pour en savoir plus
+                    sur mes projets !</p>
+            </div>
+            <div class="zone-card d-flex">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" alt="Image de la card" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Idologis</h3>
+                        <p class="card-description">Ce projet n’est pas en ligne mais son code est disponible sur Github
+                        </p>
+                        <button class="card-btn">Voir le code <img src="rss/icon/btn-icon.svg" class="btn-icon "
+                                alt="icon de button"></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" alt="Image de la card" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Aero-Club</h3>
+                        <p class="card-description">Ce projet n’est pas en ligne mais son code est disponible sur Github
+                        </p>
+                        <button class="card-btn">Voir le code<img src="rss/icon/btn-icon.svg" class="btn-icon "
+                                alt="icon de button"></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" alt="Image de la card" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Diagnostics</h3>
+                        <p class="card-description">Ce projet n’est pas en ligne mais son code est disponible sur Github
+                        </p>
+                        <button class="card-btn">Voir le code<img src="rss/icon/btn-icon.svg" class="btn-icon "
+                                alt="icon de button"></button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section-contact d-grid" id="contact">
+            <div class="zone-left-contact">
+                <h3>Contact</h3 >
+                <p>Vous avez le choix pour me contacter : soit par les réseaux sociaux, par email, ou via ce formulaire.
+                    Je serai ravi de répondre à vos questions !</p>
+                <div class="icon-contact">
+                    <p><span class="material-symbols-outlined">mail</span>Email: exemple@mail.com</p>
+                    <p><span class="material-symbols-outlined"> call </span>07 xx xx xx</p>
+                </div>
+            </div>
+            <div class="zone-right-contact d-flex">
+                <div class="container-form">
+                    <form action="" method="post" class="d-flex">
+                        <div class="form-group d-flex">
+                            <div class="form-field">
+                                <label for="nom" class="d-block">Nom</label>
+                                <input type="text" id="nom" placeholder="Nom">
+                            </div>
+                            <div class="form-field">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="example@email.com">
+                            </div>
+                        </div>
+
+                        <div class="form-group single d-flex">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" placeholder="+33 xx xx xx xx">
+                        </div>
+
+                        <div class="form-group single d-flex">
+                            <label for="message">Message</label>
+                            <textarea id="message" placeholder="Écrivez votre message ici..."></textarea>
+                        </div>
+
+                        <button class="card-btn">Envoyer <img src="rss/icon/btn-icon.svg" class="btn-icon "
+                            alt="icon de button"></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="d-flex">
+        <div>
+            Copyright © 2023 Abdallah
+        </div>
+        <div>
+            Tous droits réservés | Conditions générales | Politique de confidentialité
+        </div>
+    </footer>
+
+    <script src="rss/js/script.js"></script>
+</body>
+
+</html>
