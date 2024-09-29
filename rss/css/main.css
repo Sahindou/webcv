@@ -1,0 +1,323 @@
+.btn-icon {
+    position: relative;
+    top: 3px;
+}
+
+
+
+/*--------------------------about---------------------------*/
+
+.section-about {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 5%;
+    margin: 5%;
+    background-image: var(--section-color);
+    
+}
+
+.about-img {
+    width: 250px;
+    /* Largeur du cercle */
+    height: 250px;
+    /* Hauteur du cercle */
+    border-radius: 50%;
+    /* Arrondir les bords à 50% pour créer un cercle */
+    overflow: hidden;
+    /* Masquer l'image qui dépasse */
+    border: 5px solid #AEDAE0;
+    /* Bordure facultative */
+
+}
+
+.zone-img-about {
+    justify-content: right;
+    /* Centrer horizontalement l'image */
+    align-items: center;
+    /* Centrer verticalement l'image */
+    padding-right: 15%;
+}
+
+.about-img img {
+    width: 100%;
+    /* L'image occupe toute la largeur du conteneur */
+    height: 100%;
+    /* L'image occupe toute la hauteur du conteneur */
+    object-fit: cover;
+    /* L'image conserve ses proportions tout en remplissant le conteneur */
+}
+
+.about-icon img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-top: 5%;
+}
+
+.about-info {
+    padding: 5%;
+}
+
+/*--------------------------competence---------------------------*/
+
+.section-competence {
+    background-image: var(--section-color);
+    margin-bottom: 10%;
+}
+
+.container-competence {
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container-langage {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.label-competence {
+    margin-bottom: 10px;
+}
+
+/*--------------------------realisation---------------------------*/
+
+.section-realisation {
+    background-image: var(--section-color);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.zone-info-realisation {
+    text-align: center;
+    width: 60%;
+}
+
+.zone-card {
+    gap: 10%;
+    align-items: center;
+    justify-content: center;
+    margin: 4%;
+    padding: 4%;
+}
+
+.card {
+    width: 300px;
+    /* Largeur de la card 
+    border: 1px solid #ddd;*/
+    /*border-radius: 8px;  Coins arrondis */
+    overflow: hidden;
+    /* Masquer les débordements */
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); Légère ombre pour l'effet de profondeur 
+    background-color: white;*/
+
+    background: rgba(255, 255, 255, 0.22);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.1px);
+    -webkit-backdrop-filter: blur(2.1px);
+    border: 1px solid rgba(255, 255, 255, 0.39);
+}
+
+
+
+/* Image de la card */
+.card-img {
+    width: 100%;
+    /* Prendre toute la largeur de la card */
+    height: 200px;
+    /* Hauteur fixe pour l'image */
+    object-fit: cover;
+    /* Couvrir la card tout en conservant le ratio */
+
+}
+
+/* Contenu de la card */
+.card-content {
+    padding: 20px;
+    text-align: center;
+    /* Centrer le contenu de la card */
+    background: rgba(255, 255, 255, 0.22);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.1px);
+    -webkit-backdrop-filter: blur(2.1px);
+    border: 1px solid rgba(255, 255, 255, 0.39);
+}
+
+/* Titre de la card */
+.card-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    /* Espacement en bas du titre */
+    color: var(--font-color);
+}
+
+/* Description de la card */
+.card-description {
+    font-size: 1em;
+    color: #666;
+    /* Couleur de texte légèrement grisée */
+    margin-bottom: 20px;
+    /* Espacement en bas du paragraphe */
+}
+
+/*--------------------------contact---------------------------*/
+
+.section-contact {
+    grid-template-columns: 1fr 1fr;
+    margin: 5%;
+    padding: 5%;
+    background-image: var(--section-color);
+    height: 80vh;
+}
+
+.material-symbols-outlined {
+    position: relative;
+    top: 6px;
+}
+
+.zone-right-contact {
+    background-color: transparent;
+    /**/
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.icon-contact{
+   position: relative;
+   right: -50%;
+}
+
+.container-form {
+    /* background-color: var(--bg-contact);*/
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.6px);
+    -webkit-backdrop-filter: blur(9.6px);
+    border: 1px solid rgba(255, 255, 255, 0.39);
+    height: 100%;
+}
+
+/* Style des champs de formulaire */
+form {
+    
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.single {
+    flex-direction: column;
+}
+
+/* Style des labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Champs de formulaire */
+input,
+textarea {
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid #e2e2e2;
+    border-radius: 50px;
+    background-color: var(--input-bg);
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--font-color);
+    font-size: 16px;
+}
+
+/* Champ de texte */
+textarea {
+    border-radius: 20px;
+    height: 150px;
+    resize: none;
+}
+
+/* Bouton de soumission */
+.submit-button {
+    background-color: var(--btn-color);
+    border: none;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: var(--font-color);
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: var(--btn-hover);
+}
+
+/* Adaptation pour les petits écrans */
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .form-group {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .section-about {
+        grid-template-rows: auto 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .icon-contact{
+        right: -25%;
+        margin: 4%;
+    }
+
+    /*.container-competence {
+        grid-template-rows: auto 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 5%;
+        margin: 3%;
+    }*/
+
+    .zone-card {
+
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 4%;
+        padding: 4%;
+    }
+
+    .card {
+        margin-bottom: 5%;
+    }
+
+    .section-contact {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 5%;
+        padding: 5%;
+        background-image: var(--section-color);
+        height: 80vh;
+    }
+}
+
+/*--------------------------competence---------------------------*/
+
