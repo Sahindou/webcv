@@ -3,8 +3,10 @@
     top: 3px;
 }
 
-
-
+.logo{
+    margin-left : 30px;
+    margin-top: 25px;
+}
 /*--------------------------about---------------------------*/
 
 .section-about {
@@ -13,38 +15,26 @@
     padding: 5%;
     margin: 5%;
     background-image: var(--section-color);
-    
 }
 
 .about-img {
     width: 250px;
-    /* Largeur du cercle */
     height: 250px;
-    /* Hauteur du cercle */
     border-radius: 50%;
-    /* Arrondir les bords à 50% pour créer un cercle */
     overflow: hidden;
-    /* Masquer l'image qui dépasse */
     border: 5px solid #AEDAE0;
-    /* Bordure facultative */
-
 }
 
 .zone-img-about {
     justify-content: right;
-    /* Centrer horizontalement l'image */
     align-items: center;
-    /* Centrer verticalement l'image */
     padding-right: 15%;
 }
 
 .about-img img {
     width: 100%;
-    /* L'image occupe toute la largeur du conteneur */
     height: 100%;
-    /* L'image occupe toute la hauteur du conteneur */
     object-fit: cover;
-    /* L'image conserve ses proportions tout en remplissant le conteneur */
 }
 
 .about-icon img {
@@ -105,14 +95,7 @@
 
 .card {
     width: 300px;
-    /* Largeur de la card 
-    border: 1px solid #ddd;*/
-    /*border-radius: 8px;  Coins arrondis */
     overflow: hidden;
-    /* Masquer les débordements */
-    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); Légère ombre pour l'effet de profondeur 
-    background-color: white;*/
-
     background: rgba(255, 255, 255, 0.22);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -126,19 +109,14 @@
 /* Image de la card */
 .card-img {
     width: 100%;
-    /* Prendre toute la largeur de la card */
     height: 200px;
-    /* Hauteur fixe pour l'image */
     object-fit: cover;
-    /* Couvrir la card tout en conservant le ratio */
-
 }
 
 /* Contenu de la card */
 .card-content {
     padding: 20px;
     text-align: center;
-    /* Centrer le contenu de la card */
     background: rgba(255, 255, 255, 0.22);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -159,9 +137,7 @@
 .card-description {
     font-size: 1em;
     color: #666;
-    /* Couleur de texte légèrement grisée */
     margin-bottom: 20px;
-    /* Espacement en bas du paragraphe */
 }
 
 /*--------------------------contact---------------------------*/
@@ -192,7 +168,6 @@
 }
 
 .container-form {
-    /* background-color: var(--bg-contact);*/
     background: rgba(255, 255, 255, 0.24);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -204,13 +179,11 @@
 
 /* Style des champs de formulaire */
 form {
-    
     flex-direction: column;
     gap: 20px;
 }
 
 .form-group {
-    
     justify-content: space-between;
     gap: 20px;
 }
@@ -288,13 +261,6 @@ textarea {
         right: -25%;
         margin: 4%;
     }
-
-    /*.container-competence {
-        grid-template-rows: auto 1fr;
-        grid-template-columns: 1fr 1fr;
-        gap: 5%;
-        margin: 3%;
-    }*/
 
     .zone-card {
 
