@@ -86,15 +86,16 @@
 }
 
 .zone-card {
-    gap: 10%;
-    align-items: center;
-    justify-content: center;
-    margin: 4%;
-    padding: 4%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
 }
 
 .card {
-    width: 300px;
+    max-width: 100%;
+    width: 100%;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.22);
     border-radius: 16px;
